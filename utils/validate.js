@@ -5,7 +5,7 @@ const idSchema = Joi.object({
 });
 
 const getTasksSchema = Joi.object({
-    page: Joi.number().integer().min(1).max(99999).default(1)
+    page: Joi.number().integer().min(1).max(99999)
 });
 
 const taskSchema = Joi.object({
